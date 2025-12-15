@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import Login from "../auth/Login";
+import Register from "../auth/Register";
 const CreateQuiz = () => {
   return (
-    <div>CreateQuiz</div>
-  )
-}
+    <div>
+      <Login />
+      <Register />
+    </div>
+  );
+};
 
-export default CreateQuiz
+export default CreateQuiz;
