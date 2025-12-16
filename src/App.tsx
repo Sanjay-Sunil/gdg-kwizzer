@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { useNavigate } from 'react-router'
 
@@ -30,7 +29,7 @@ function App() {
             fontSize: '1.1rem',
             cursor: 'pointer',
             transition: 'background 0.2s'
-          }} onClick={() => navigate("quiz")}>
+          }} onClick={() => navigate("/participant/join")}>
             Join Game
           </button>
           <button style={{

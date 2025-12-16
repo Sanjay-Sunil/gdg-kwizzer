@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+.quiz-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0b1f2a, #163545);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.quiz-wrapper {
+  width: 100%;
+  max-width: 420px;
+}
+
+.quiz-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.quiz-stat {
+  background: #243e4f;
+  padding: 0.55rem 1rem;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.timer-value.warning {
+  color: #f6c177;
+}
+
+.quiz-card {
+  background: #1e3240;
+  border-radius: 22px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-progress {
+  text-align: center;
+  color: #c6d0d8;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-question {
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* OPTIONS */
+.quiz-option {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 14px;
+  border: none;
+  background: #e6e8eb;
+  color: #1f2933;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.quiz-option:hover:not(:disabled) {
+  background: #f1f3f5;
+}
+
+.quiz-option:disabled {
+  cursor: default;
+}
+
+.option-letter {
+  background: #1e3240;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+/* STATES */
+.quiz-option.selected {
+  background: #dbe9f6;
+}
+
+.quiz-option.correct {
+  background: #d8f3dc;
+}
+
+.quiz-option.wrong {
+  background: #f8d7da;
+}
+
+.quiz-next-button {
+  width: 100%;
+  margin-top: 1.6rem;
+  padding: 0.9rem;
+  border-radius: 14px;
+  border: none;
+  background: #9fc3e6;
+  color: #0b1f2a;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
